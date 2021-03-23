@@ -7,7 +7,7 @@ Curso: 4º
 Autor: Eduardo Maldonado Fernández
 
 ## Introducción
-Se ha realizado un programa en processing que crear un prototipo de un despacho con varios objetos 3D que visualiza distinta perspectivas de la cámara con sus texturas y una iluminación
+Se ha realizado un programa en processing que crear un prototipo de un despacho con varios objetos 3D que visualiza distinta perspectivas de la cámara con sus texturas y una iluminación.
 
 ## Descripción
 Se ha programado en processing 
@@ -16,19 +16,21 @@ Se ha programado en processing
 
 ## Controles de la vista e iluminación
 
-<p style=”text-align: justify;”>Primero establecemos unas variables globales: declaramos unas variables float que nos indicaran el angulo del planeta respecto al sol. Además, se añade unas variables para la posiciones de los planetas y PShape variables globales para cada planeta, así como para el fondo del sistema solar un PImage.</p>
+Se ha añadido una serie de funciones para poder tener unos distintos puntos de vista de este despacho, así como una iluminación a la vez que se pasa el mouse por encima de los objetos. Los controles para poder manejar la cámara son:
 
-En la función setup() establecemos el tamaño de la pantalla completa, y diversos valores de las variables globales explicados anteriormente y generamos los planetas correspondientes medianteo el método createPlanet() que se explicará a continuación.
+- **Tecla C:** Para poder visualizar el despacho.
 
-A partir de la función draw() llamaremos a una serie de funciones que explicamos su utilidad:
+-	**Tecla UP:** Modo vista desde el techo del despacho.
 
-- **drawControl():** Con este función, se mostrará el control edonde se explica como terminar la ejecución del programa.
-
--	**createPlanet():** Este metodo llamado en el setup() genera crear un planeta correspondiente añadiendole su textura correspondiente.
-
--	**showSol():** Mediante esta función, se muestra el sol. 
+-	**Tecla DOWN:** Modo vista desde el suelo.
+-	**Tecla LEFT:** Modo vista desde la mesa.
+-	**Tecla RIGHT:** Modo vista desde la esquina.
+-	**Tecla R:** Modo vista por defecto. 
 
 
 
 ## Descarga e instalación
-Para poder probar este programa es necesario descargar el fichero sistema_solar.pde, así como la carpeta /data, para poder descargar todas las texturas necesarias para la ejecución.
+Para poder probar este programa es necesario descargar toda la carpeta Office, así como descarga la carpeta de data con todos sus fichero .obj así como sus texturas.
+
+## Comentarios
+Debido a las texturas y algunos objetos 3D, este programa funciona de una manera bastante lenta.
